@@ -1,0 +1,16 @@
+table {
+    table-layout: fixed ;
+    width: 99% ;
+  }
+  td {
+    width: 33% ;
+  }
+
+  tr {
+      margin-top : 12px;
+      margin-bottom: 12px;
+  }
+  .content {
+    max-width: 500px;
+    margin: auto;
+  }

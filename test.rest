@@ -1,0 +1,20 @@
+###
+get http://localhost:8080/mairie/resources/annuaire
+
+###
+GET http://localhost:8080/mairie/resources/annuaire/booksbox/
+
+####
+GET http://localhost:8080/mairie/resources/annuaire/booksbox/names
+
+###
+POST http://localhost:8080/mairie/resources/annuaire/booksbox/{nom}
+
+###
+GET http://localhost:8080/mairie/resources/annuaire/booksbox/{nom}
+
+###
+GET http://localhost:8080/mairie/resources/annuaire/booksbox/{nom}/{titre}
+
+###
+POST http://localhost:8080/mairie/resources/annuaire/booksbox/{nom}/{titre}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <link
+            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+            rel="stylesheet"
+    />  
+
+    <link rel="stylesheet" href="style.css">
+    <script src="text.js" type="text/javaScript"></script>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <title>Book box.</title>
+</head>
+<body>
+
+<h2>Front Projet Services Web</h2>
+<table>
+    <tr>
+        <th>Requêtes sans input.</th>
+        <th>Requêtes avec un input.</th>
+        <th>Requêtes avec 2 inputs.</th>
+    </tr>
+    <tr>
+        <td>
+            <button onclick="test()">Récuperer le status du serveur.</button>
+        </td>
+        <td>
+            Veuillez rentrer le nom de l'auteur des livres que vous recherchez : <br>
+            Nom :<br>
+            <input id="bookName" name="Nom de l'auteur du livre" type="text"/>
+        </td>
+        <td>
+            Veuillez rentrer le nom de l'auteur du livre que vous recherchez, ainsi que son titre :<br>
+            Nom  : <br>
+            <input id="postBookTitle" name="Nom de l'auteur du livre" type="text"/><br>
+            Titre :<br>
+            <input id="postBookName" name="titre du livre" type="text"/><br>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button onclick="getBooksApi()">Récuperer l'ensemble des informations.</button>
+        </td>
+        <td>
+            <button onclick="getBookByNameApi()">
+                Chercher les livres de la personne.  
+            </button>
+        </td>
+        <td>Chercher un livre via Le nom et le titre <br/>
+            <button onclick="getBookByNameAndTitleApi()">Chercher un livre.</button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button onclick="getBooksNameApi()">Récuperer les personnes inscrites.</button>
+        </td>
+        <td>
+            <button onclick="postBookByNameApi()">
+                Entrer une nouvelle personne.
+            </button>
+        </td>
+        <td>Entrer un livre via le nom de la personne et le titre <br>
+            <button onclick="postBookByNameAndTitleApi()"> Entrer un livre.</button>
+        </td>
+    </tr>
+</table>
+
+<h4>Output : </h4>
+<div id="root"></div>
+<noscript>You need to enable JavaScript to run this app.</noscript>
+</body>
+</html>
